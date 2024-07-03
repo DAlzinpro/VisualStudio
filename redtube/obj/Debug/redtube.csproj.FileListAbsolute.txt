@@ -1,0 +1,12 @@
+C:\Users\ric\Desktop\Ytb2\redtube\bin\Debug\redtube.exe.config
+C:\Users\ric\Desktop\Ytb2\redtube\bin\Debug\redtube.exe
+C:\Users\ric\Desktop\Ytb2\redtube\bin\Debug\redtube.pdb
+C:\Users\ric\Desktop\Ytb2\redtube\obj\Debug\redtube.csproj.AssemblyReference.cache
+C:\Users\ric\Desktop\Ytb2\redtube\obj\Debug\redtube.Form1.resources
+C:\Users\ric\Desktop\Ytb2\redtube\obj\Debug\redtube.Properties.Resources.resources
+C:\Users\ric\Desktop\Ytb2\redtube\obj\Debug\redtube.csproj.GenerateResource.cache
+C:\Users\ric\Desktop\Ytb2\redtube\obj\Debug\redtube.csproj.CoreCompileInputs.cache
+C:\Users\ric\Desktop\Ytb2\redtube\obj\Debug\redtube.exe
+C:\Users\ric\Desktop\Ytb2\redtube\obj\Debug\redtube.pdb
+C:\Users\ric\Desktop\Ytb2\redtube\bin\Debug\Guna.UI2.dll
+C:\Users\ric\Desktop\Ytb2\redtube\obj\Debug\redtube.csproj.Up2Date

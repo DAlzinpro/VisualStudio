@@ -22,19 +22,19 @@ namespace KeyAuth
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.guna2MessageDialog1 = new Guna.UI2.WinForms.Guna2MessageDialog();
             this.userDataField = new System.Windows.Forms.ListBox();
-            this.checkSessionBtn = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.onlineUsersField = new System.Windows.Forms.ListBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.sendLogDataBtn = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.logDataField = new Guna.UI2.WinForms.Guna2TextBox();
-            this.setUserVarBtn = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.fetchGlobalVariableBtn = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.fetchUserVarBtn = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.varDataField = new Guna.UI2.WinForms.Guna2TextBox();
-            this.varField = new Guna.UI2.WinForms.Guna2TextBox();
-            this.webhookID = new Guna.UI2.WinForms.Guna2TextBox();
-            this.webhookBaseURL = new Guna.UI2.WinForms.Guna2TextBox();
-            this.sendWebhookBtn = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.siticonePanel1 = new Siticone.Desktop.UI.WinForms.SiticonePanel();
+            this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
+            this.siticonePanel2 = new Siticone.Desktop.UI.WinForms.SiticonePanel();
+            this.guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2Button4 = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2Button5 = new Guna.UI2.WinForms.Guna2Button();
+            this.siticonePanel3 = new Siticone.Desktop.UI.WinForms.SiticonePanel();
+            this.siticoneHtmlLabel1 = new Siticone.Desktop.UI.WinForms.SiticoneHtmlLabel();
+            this.siticonePanel1.SuspendLayout();
+            this.siticonePanel2.SuspendLayout();
+            this.siticonePanel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // siticoneDragControl1
@@ -50,7 +50,7 @@ namespace KeyAuth
             this.siticoneControlBox1.HoveredState.IconColor = System.Drawing.Color.White;
             this.siticoneControlBox1.HoveredState.Parent = this.siticoneControlBox1;
             this.siticoneControlBox1.IconColor = System.Drawing.Color.White;
-            this.siticoneControlBox1.Location = new System.Drawing.Point(1170, 4);
+            this.siticoneControlBox1.Location = new System.Drawing.Point(771, 4);
             this.siticoneControlBox1.Name = "siticoneControlBox1";
             this.siticoneControlBox1.ShadowDecoration.Parent = this.siticoneControlBox1;
             this.siticoneControlBox1.Size = new System.Drawing.Size(45, 29);
@@ -65,7 +65,7 @@ namespace KeyAuth
             this.siticoneControlBox2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(9)))), ((int)(((byte)(13)))));
             this.siticoneControlBox2.HoveredState.Parent = this.siticoneControlBox2;
             this.siticoneControlBox2.IconColor = System.Drawing.Color.White;
-            this.siticoneControlBox2.Location = new System.Drawing.Point(1125, 4);
+            this.siticoneControlBox2.Location = new System.Drawing.Point(726, 4);
             this.siticoneControlBox2.Name = "siticoneControlBox2";
             this.siticoneControlBox2.ShadowDecoration.Parent = this.siticoneControlBox2;
             this.siticoneControlBox2.Size = new System.Drawing.Size(45, 29);
@@ -99,48 +99,13 @@ namespace KeyAuth
             // userDataField
             // 
             this.userDataField.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(23)))));
-            this.userDataField.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.userDataField.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.userDataField.ForeColor = System.Drawing.Color.White;
             this.userDataField.FormattingEnabled = true;
-            this.userDataField.Location = new System.Drawing.Point(884, 124);
+            this.userDataField.Location = new System.Drawing.Point(167, 58);
             this.userDataField.Name = "userDataField";
-            this.userDataField.Size = new System.Drawing.Size(323, 119);
+            this.userDataField.Size = new System.Drawing.Size(600, 364);
             this.userDataField.TabIndex = 62;
-            // 
-            // checkSessionBtn
-            // 
-            this.checkSessionBtn.BorderColor = System.Drawing.Color.Gray;
-            this.checkSessionBtn.BorderRadius = 8;
-            this.checkSessionBtn.BorderThickness = 1;
-            this.checkSessionBtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.checkSessionBtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.checkSessionBtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.checkSessionBtn.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.checkSessionBtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.checkSessionBtn.FillColor = System.Drawing.Color.DodgerBlue;
-            this.checkSessionBtn.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(23)))));
-            this.checkSessionBtn.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.checkSessionBtn.ForeColor = System.Drawing.Color.White;
-            this.checkSessionBtn.Location = new System.Drawing.Point(20, 482);
-            this.checkSessionBtn.Name = "checkSessionBtn";
-            this.checkSessionBtn.Size = new System.Drawing.Size(323, 36);
-            this.checkSessionBtn.TabIndex = 63;
-            this.checkSessionBtn.Text = "Check Session";
-            this.checkSessionBtn.Click += new System.EventHandler(this.checkSessionBtn_Click);
-            // 
-            // onlineUsersField
-            // 
-            this.onlineUsersField.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(23)))));
-            this.onlineUsersField.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.onlineUsersField.ForeColor = System.Drawing.Color.White;
-            this.onlineUsersField.FormattingEnabled = true;
-            this.onlineUsersField.Items.AddRange(new object[] {
-            "Online Users:",
-            ""});
-            this.onlineUsersField.Location = new System.Drawing.Point(884, 249);
-            this.onlineUsersField.Name = "onlineUsersField";
-            this.onlineUsersField.Size = new System.Drawing.Size(323, 106);
-            this.onlineUsersField.TabIndex = 64;
             // 
             // label2
             // 
@@ -150,229 +115,132 @@ namespace KeyAuth
             this.label2.Location = new System.Drawing.Point(10, 11);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(190, 19);
+            this.label2.Size = new System.Drawing.Size(122, 19);
             this.label2.TabIndex = 27;
-            this.label2.Text = "KeyAuth Official C# Example";
+            this.label2.Text = "Partition Manager";
             // 
-            // sendLogDataBtn
+            // siticonePanel1
             // 
-            this.sendLogDataBtn.BorderColor = System.Drawing.Color.Gray;
-            this.sendLogDataBtn.BorderRadius = 8;
-            this.sendLogDataBtn.BorderThickness = 1;
-            this.sendLogDataBtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.sendLogDataBtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.sendLogDataBtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.sendLogDataBtn.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.sendLogDataBtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.sendLogDataBtn.FillColor = System.Drawing.Color.DodgerBlue;
-            this.sendLogDataBtn.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(23)))));
-            this.sendLogDataBtn.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.sendLogDataBtn.ForeColor = System.Drawing.Color.White;
-            this.sendLogDataBtn.Location = new System.Drawing.Point(20, 407);
-            this.sendLogDataBtn.Name = "sendLogDataBtn";
-            this.sendLogDataBtn.Size = new System.Drawing.Size(323, 36);
-            this.sendLogDataBtn.TabIndex = 68;
-            this.sendLogDataBtn.Text = "Send Log";
-            this.sendLogDataBtn.Click += new System.EventHandler(this.guna2GradientButton1_Click);
+            this.siticonePanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(23)))));
+            this.siticonePanel1.BorderColor = System.Drawing.Color.White;
+            this.siticonePanel1.Controls.Add(this.guna2Button4);
+            this.siticonePanel1.Controls.Add(this.guna2Button2);
+            this.siticonePanel1.Controls.Add(this.guna2Button1);
+            this.siticonePanel1.Location = new System.Drawing.Point(13, 58);
+            this.siticonePanel1.Name = "siticonePanel1";
+            this.siticonePanel1.Size = new System.Drawing.Size(138, 379);
+            this.siticonePanel1.TabIndex = 63;
             // 
-            // logDataField
+            // guna2Button2
             // 
-            this.logDataField.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(107)))), ((int)(((byte)(114)))), ((int)(((byte)(128)))));
-            this.logDataField.BorderRadius = 8;
-            this.logDataField.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.logDataField.DefaultText = "";
-            this.logDataField.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.logDataField.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.logDataField.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.logDataField.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.logDataField.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(9)))), ((int)(((byte)(13)))));
-            this.logDataField.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.logDataField.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.logDataField.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.logDataField.Location = new System.Drawing.Point(20, 365);
-            this.logDataField.Name = "logDataField";
-            this.logDataField.PasswordChar = '\0';
-            this.logDataField.PlaceholderText = "Log Data Here";
-            this.logDataField.SelectedText = "";
-            this.logDataField.Size = new System.Drawing.Size(323, 36);
-            this.logDataField.TabIndex = 69;
-            this.logDataField.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.guna2Button2.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button2.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2Button2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2Button2.FillColor = System.Drawing.Color.DarkBlue;
+            this.guna2Button2.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2Button2.ForeColor = System.Drawing.Color.White;
+            this.guna2Button2.Location = new System.Drawing.Point(7, 114);
+            this.guna2Button2.Name = "guna2Button2";
+            this.guna2Button2.Size = new System.Drawing.Size(123, 45);
+            this.guna2Button2.TabIndex = 3;
+            this.guna2Button2.Text = "Account";
+            this.guna2Button2.Click += new System.EventHandler(this.guna2Button2_Click);
             // 
-            // setUserVarBtn
+            // guna2Button1
             // 
-            this.setUserVarBtn.BorderColor = System.Drawing.Color.Gray;
-            this.setUserVarBtn.BorderRadius = 8;
-            this.setUserVarBtn.BorderThickness = 1;
-            this.setUserVarBtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.setUserVarBtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.setUserVarBtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.setUserVarBtn.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.setUserVarBtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.setUserVarBtn.FillColor = System.Drawing.Color.DodgerBlue;
-            this.setUserVarBtn.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(23)))));
-            this.setUserVarBtn.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.setUserVarBtn.ForeColor = System.Drawing.Color.White;
-            this.setUserVarBtn.Location = new System.Drawing.Point(20, 249);
-            this.setUserVarBtn.Name = "setUserVarBtn";
-            this.setUserVarBtn.Size = new System.Drawing.Size(155, 36);
-            this.setUserVarBtn.TabIndex = 58;
-            this.setUserVarBtn.Text = "Set User Variable";
-            this.setUserVarBtn.Click += new System.EventHandler(this.setUserVarBtn_Click);
+            this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2Button1.FillColor = System.Drawing.Color.DarkBlue;
+            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2Button1.ForeColor = System.Drawing.Color.White;
+            this.guna2Button1.Location = new System.Drawing.Point(7, 12);
+            this.guna2Button1.Name = "guna2Button1";
+            this.guna2Button1.Size = new System.Drawing.Size(123, 45);
+            this.guna2Button1.TabIndex = 2;
+            this.guna2Button1.Text = "Root";
+            this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
             // 
-            // fetchGlobalVariableBtn
+            // siticonePanel2
             // 
-            this.fetchGlobalVariableBtn.BorderColor = System.Drawing.Color.Gray;
-            this.fetchGlobalVariableBtn.BorderRadius = 8;
-            this.fetchGlobalVariableBtn.BorderThickness = 1;
-            this.fetchGlobalVariableBtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.fetchGlobalVariableBtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.fetchGlobalVariableBtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.fetchGlobalVariableBtn.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.fetchGlobalVariableBtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.fetchGlobalVariableBtn.FillColor = System.Drawing.Color.DodgerBlue;
-            this.fetchGlobalVariableBtn.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(23)))));
-            this.fetchGlobalVariableBtn.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.fetchGlobalVariableBtn.ForeColor = System.Drawing.Color.White;
-            this.fetchGlobalVariableBtn.Location = new System.Drawing.Point(20, 291);
-            this.fetchGlobalVariableBtn.Name = "fetchGlobalVariableBtn";
-            this.fetchGlobalVariableBtn.Size = new System.Drawing.Size(323, 36);
-            this.fetchGlobalVariableBtn.TabIndex = 60;
-            this.fetchGlobalVariableBtn.Text = "Fetch Global Variable";
-            this.fetchGlobalVariableBtn.Click += new System.EventHandler(this.fetchGlobalVariableBtn_Click);
+            this.siticonePanel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(23)))));
+            this.siticonePanel2.BorderColor = System.Drawing.Color.White;
+            this.siticonePanel2.Controls.Add(this.siticonePanel3);
+            this.siticonePanel2.Controls.Add(this.guna2Button5);
+            this.siticonePanel2.Controls.Add(this.guna2Button3);
+            this.siticonePanel2.Location = new System.Drawing.Point(167, 58);
+            this.siticonePanel2.Name = "siticonePanel2";
+            this.siticonePanel2.Size = new System.Drawing.Size(603, 379);
+            this.siticonePanel2.TabIndex = 64;
             // 
-            // fetchUserVarBtn
+            // guna2Button3
             // 
-            this.fetchUserVarBtn.BorderColor = System.Drawing.Color.Gray;
-            this.fetchUserVarBtn.BorderRadius = 8;
-            this.fetchUserVarBtn.BorderThickness = 1;
-            this.fetchUserVarBtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.fetchUserVarBtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.fetchUserVarBtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.fetchUserVarBtn.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.fetchUserVarBtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.fetchUserVarBtn.FillColor = System.Drawing.Color.DodgerBlue;
-            this.fetchUserVarBtn.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(23)))));
-            this.fetchUserVarBtn.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.fetchUserVarBtn.ForeColor = System.Drawing.Color.White;
-            this.fetchUserVarBtn.Location = new System.Drawing.Point(188, 249);
-            this.fetchUserVarBtn.Name = "fetchUserVarBtn";
-            this.fetchUserVarBtn.Size = new System.Drawing.Size(155, 36);
-            this.fetchUserVarBtn.TabIndex = 59;
-            this.fetchUserVarBtn.Text = "Fetch User Variable";
-            this.fetchUserVarBtn.Click += new System.EventHandler(this.fetchUserVarBtn_Click);
+            this.guna2Button3.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button3.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button3.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2Button3.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2Button3.FillColor = System.Drawing.Color.DarkBlue;
+            this.guna2Button3.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2Button3.ForeColor = System.Drawing.Color.White;
+            this.guna2Button3.Location = new System.Drawing.Point(464, 12);
+            this.guna2Button3.Name = "guna2Button3";
+            this.guna2Button3.Size = new System.Drawing.Size(123, 45);
+            this.guna2Button3.TabIndex = 4;
+            this.guna2Button3.Text = "Flash";
             // 
-            // varDataField
+            // guna2Button4
             // 
-            this.varDataField.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(107)))), ((int)(((byte)(114)))), ((int)(((byte)(128)))));
-            this.varDataField.BorderRadius = 8;
-            this.varDataField.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.varDataField.DefaultText = "";
-            this.varDataField.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.varDataField.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.varDataField.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.varDataField.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.varDataField.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(9)))), ((int)(((byte)(13)))));
-            this.varDataField.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.varDataField.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.varDataField.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.varDataField.Location = new System.Drawing.Point(20, 207);
-            this.varDataField.Name = "varDataField";
-            this.varDataField.PasswordChar = '\0';
-            this.varDataField.PlaceholderText = "User Variable Data Here";
-            this.varDataField.SelectedText = "";
-            this.varDataField.Size = new System.Drawing.Size(323, 36);
-            this.varDataField.TabIndex = 61;
-            this.varDataField.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.guna2Button4.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button4.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button4.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2Button4.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2Button4.FillColor = System.Drawing.Color.DarkBlue;
+            this.guna2Button4.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2Button4.ForeColor = System.Drawing.Color.White;
+            this.guna2Button4.Location = new System.Drawing.Point(7, 63);
+            this.guna2Button4.Name = "guna2Button4";
+            this.guna2Button4.Size = new System.Drawing.Size(123, 45);
+            this.guna2Button4.TabIndex = 4;
+            this.guna2Button4.Text = "Rom Install";
             // 
-            // varField
+            // guna2Button5
             // 
-            this.varField.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(107)))), ((int)(((byte)(114)))), ((int)(((byte)(128)))));
-            this.varField.BorderRadius = 8;
-            this.varField.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.varField.DefaultText = "";
-            this.varField.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.varField.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.varField.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.varField.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.varField.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(9)))), ((int)(((byte)(13)))));
-            this.varField.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.varField.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.varField.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.varField.Location = new System.Drawing.Point(20, 164);
-            this.varField.Name = "varField";
-            this.varField.PasswordChar = '\0';
-            this.varField.PlaceholderText = "User Variable Here";
-            this.varField.SelectedText = "";
-            this.varField.Size = new System.Drawing.Size(323, 36);
-            this.varField.TabIndex = 57;
-            this.varField.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.guna2Button5.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button5.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button5.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2Button5.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2Button5.FillColor = System.Drawing.Color.DodgerBlue;
+            this.guna2Button5.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2Button5.ForeColor = System.Drawing.Color.White;
+            this.guna2Button5.Location = new System.Drawing.Point(278, 20);
+            this.guna2Button5.Name = "guna2Button5";
+            this.guna2Button5.Size = new System.Drawing.Size(98, 28);
+            this.guna2Button5.TabIndex = 5;
+            this.guna2Button5.Text = "Select a file";
+            this.guna2Button5.Click += new System.EventHandler(this.guna2Button5_Click);
             // 
-            // webhookID
+            // siticonePanel3
             // 
-            this.webhookID.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(107)))), ((int)(((byte)(114)))), ((int)(((byte)(128)))));
-            this.webhookID.BorderRadius = 8;
-            this.webhookID.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.webhookID.DefaultText = "";
-            this.webhookID.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.webhookID.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.webhookID.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.webhookID.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.webhookID.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(9)))), ((int)(((byte)(13)))));
-            this.webhookID.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.webhookID.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.webhookID.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.webhookID.Location = new System.Drawing.Point(20, 39);
-            this.webhookID.Name = "webhookID";
-            this.webhookID.PasswordChar = '\0';
-            this.webhookID.PlaceholderText = "Webhook ID";
-            this.webhookID.SelectedText = "";
-            this.webhookID.Size = new System.Drawing.Size(98, 36);
-            this.webhookID.TabIndex = 65;
-            this.webhookID.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.siticonePanel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(22)))), ((int)(((byte)(22)))));
+            this.siticonePanel3.BorderColor = System.Drawing.Color.White;
+            this.siticonePanel3.Controls.Add(this.siticoneHtmlLabel1);
+            this.siticonePanel3.Location = new System.Drawing.Point(14, 20);
+            this.siticonePanel3.Name = "siticonePanel3";
+            this.siticonePanel3.Size = new System.Drawing.Size(254, 28);
+            this.siticonePanel3.TabIndex = 65;
             // 
-            // webhookBaseURL
+            // siticoneHtmlLabel1
             // 
-            this.webhookBaseURL.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(107)))), ((int)(((byte)(114)))), ((int)(((byte)(128)))));
-            this.webhookBaseURL.BorderRadius = 8;
-            this.webhookBaseURL.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.webhookBaseURL.DefaultText = "";
-            this.webhookBaseURL.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.webhookBaseURL.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.webhookBaseURL.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.webhookBaseURL.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.webhookBaseURL.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(9)))), ((int)(((byte)(13)))));
-            this.webhookBaseURL.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.webhookBaseURL.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.webhookBaseURL.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.webhookBaseURL.Location = new System.Drawing.Point(124, 39);
-            this.webhookBaseURL.Name = "webhookBaseURL";
-            this.webhookBaseURL.PasswordChar = '\0';
-            this.webhookBaseURL.PlaceholderText = "Base URL";
-            this.webhookBaseURL.SelectedText = "";
-            this.webhookBaseURL.Size = new System.Drawing.Size(219, 36);
-            this.webhookBaseURL.TabIndex = 67;
-            this.webhookBaseURL.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // sendWebhookBtn
-            // 
-            this.sendWebhookBtn.BorderColor = System.Drawing.Color.Gray;
-            this.sendWebhookBtn.BorderRadius = 8;
-            this.sendWebhookBtn.BorderThickness = 1;
-            this.sendWebhookBtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.sendWebhookBtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.sendWebhookBtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.sendWebhookBtn.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.sendWebhookBtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.sendWebhookBtn.FillColor = System.Drawing.Color.DodgerBlue;
-            this.sendWebhookBtn.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(23)))));
-            this.sendWebhookBtn.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.sendWebhookBtn.ForeColor = System.Drawing.Color.White;
-            this.sendWebhookBtn.Location = new System.Drawing.Point(20, 81);
-            this.sendWebhookBtn.Name = "sendWebhookBtn";
-            this.sendWebhookBtn.Size = new System.Drawing.Size(323, 36);
-            this.sendWebhookBtn.TabIndex = 66;
-            this.sendWebhookBtn.Text = "Send Webhook";
-            this.sendWebhookBtn.Click += new System.EventHandler(this.sendWebhookBtn_Click);
+            this.siticoneHtmlLabel1.BackColor = System.Drawing.Color.Transparent;
+            this.siticoneHtmlLabel1.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.siticoneHtmlLabel1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.siticoneHtmlLabel1.Location = new System.Drawing.Point(10, 5);
+            this.siticoneHtmlLabel1.Name = "siticoneHtmlLabel1";
+            this.siticoneHtmlLabel1.Size = new System.Drawing.Size(38, 17);
+            this.siticoneHtmlLabel1.TabIndex = 0;
+            this.siticoneHtmlLabel1.Text = "No file";
             // 
             // Main
             // 
@@ -380,20 +248,10 @@ namespace KeyAuth
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoValidate = System.Windows.Forms.AutoValidate.Disable;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(9)))), ((int)(((byte)(13)))));
-            this.ClientSize = new System.Drawing.Size(1219, 543);
-            this.Controls.Add(this.logDataField);
-            this.Controls.Add(this.sendLogDataBtn);
-            this.Controls.Add(this.webhookBaseURL);
-            this.Controls.Add(this.sendWebhookBtn);
-            this.Controls.Add(this.webhookID);
-            this.Controls.Add(this.onlineUsersField);
-            this.Controls.Add(this.checkSessionBtn);
+            this.ClientSize = new System.Drawing.Size(820, 463);
+            this.Controls.Add(this.siticonePanel2);
+            this.Controls.Add(this.siticonePanel1);
             this.Controls.Add(this.userDataField);
-            this.Controls.Add(this.varDataField);
-            this.Controls.Add(this.fetchGlobalVariableBtn);
-            this.Controls.Add(this.fetchUserVarBtn);
-            this.Controls.Add(this.setUserVarBtn);
-            this.Controls.Add(this.varField);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.siticoneControlBox2);
@@ -404,6 +262,10 @@ namespace KeyAuth
             this.Text = "Loader";
             this.TransparencyKey = System.Drawing.Color.Maroon;
             this.Load += new System.EventHandler(this.Main_Load);
+            this.siticonePanel1.ResumeLayout(false);
+            this.siticonePanel2.ResumeLayout(false);
+            this.siticonePanel3.ResumeLayout(false);
+            this.siticonePanel3.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -427,18 +289,15 @@ namespace KeyAuth
         private System.Windows.Forms.Timer timer1;
         private Guna.UI2.WinForms.Guna2MessageDialog guna2MessageDialog1;
         private System.Windows.Forms.ListBox userDataField;
-        private Guna.UI2.WinForms.Guna2GradientButton checkSessionBtn;
-        private System.Windows.Forms.ListBox onlineUsersField;
-        private Guna.UI2.WinForms.Guna2TextBox logDataField;
-        private Guna.UI2.WinForms.Guna2GradientButton sendLogDataBtn;
-        private Guna.UI2.WinForms.Guna2TextBox webhookBaseURL;
-        private Guna.UI2.WinForms.Guna2GradientButton sendWebhookBtn;
-        private Guna.UI2.WinForms.Guna2TextBox webhookID;
-        private Guna.UI2.WinForms.Guna2TextBox varDataField;
-        private Guna.UI2.WinForms.Guna2GradientButton fetchGlobalVariableBtn;
-        private Guna.UI2.WinForms.Guna2GradientButton fetchUserVarBtn;
-        private Guna.UI2.WinForms.Guna2GradientButton setUserVarBtn;
-        private Guna.UI2.WinForms.Guna2TextBox varField;
         private System.Windows.Forms.Label label2;
+        private Siticone.Desktop.UI.WinForms.SiticonePanel siticonePanel1;
+        private Siticone.Desktop.UI.WinForms.SiticonePanel siticonePanel2;
+        private Guna.UI2.WinForms.Guna2Button guna2Button2;
+        private Guna.UI2.WinForms.Guna2Button guna2Button1;
+        private Guna.UI2.WinForms.Guna2Button guna2Button5;
+        private Guna.UI2.WinForms.Guna2Button guna2Button3;
+        private Guna.UI2.WinForms.Guna2Button guna2Button4;
+        private Siticone.Desktop.UI.WinForms.SiticonePanel siticonePanel3;
+        private Siticone.Desktop.UI.WinForms.SiticoneHtmlLabel siticoneHtmlLabel1;
     }
 }

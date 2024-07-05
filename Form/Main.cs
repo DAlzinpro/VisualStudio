@@ -42,7 +42,7 @@ namespace KeyAuth
                 Console.Write("\n Online users: ");
                 foreach (var user in onlineUsers)
                 {
-                    onlineUsersField.Items.Add(user.credential + ", ");
+                    
                 }
                 Console.WriteLine("\n");
             }
@@ -109,27 +109,20 @@ namespace KeyAuth
 
         
 
-        private void hwid_Click(object sender, EventArgs e)
-        {
-
-        }
+       
 
         private void setUserVarBtn_Click(object sender, EventArgs e)
         {
-            Login.KeyAuthApp.setvar(varField.Text, varDataField.Text);
+            
             guna2MessageDialog1.Show(Login.KeyAuthApp.response.message);
         }
 
         private void fetchUserVarBtn_Click(object sender, EventArgs e)
         {
-            Login.KeyAuthApp.getvar(varField.Text);
             guna2MessageDialog1.Show(Login.KeyAuthApp.response.message);
         }
 
-        private void fetchGlobalVariableBtn_Click(object sender, EventArgs e)
-        {
-            guna2MessageDialog1.Show(Login.KeyAuthApp.var(varField.Text) + "\n" + Login.KeyAuthApp.response.message);
-        }
+        
 
         private void checkSessionBtn_Click(object sender, EventArgs e)
         {
@@ -139,16 +132,64 @@ namespace KeyAuth
 
         private void sendWebhookBtn_Click(object sender, EventArgs e)
         {
-            Login.KeyAuthApp.webhook(webhookID.Text, webhookBaseURL.Text);
             guna2MessageDialog1.Show(Login.KeyAuthApp.response.message);
         }
 
         private void guna2GradientButton1_Click(object sender, EventArgs e)
         {
-            Login.KeyAuthApp.log(logDataField.Text);
             guna2MessageDialog1.Show(Login.KeyAuthApp.response.message);
         }
 
-        
+        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void siticoneButton2_Click(object sender, EventArgs e)
+        {
+            siticonePanel2.Visible = false;
+        }
+
+        private void siticoneButton1_Click(object sender, EventArgs e)
+        {
+            siticonePanel2.Visible = true;
+
+        }
+
+        private void guna2Button2_Click(object sender, EventArgs e)
+        {
+            siticonePanel2.Visible = false;
+
+        }
+
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+            siticonePanel2.Visible = true;
+
+        }
+
+        private void guna2Button5_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog openFileDialog1 = new OpenFileDialog();
+
+            // Configurações do OpenFileDialog
+            openFileDialog1.Title = "Selecionar Arquivo";
+            openFileDialog1.Filter = "Arquivos de Texto|*.txt|Todos os Arquivos|*.*";
+            openFileDialog1.FilterIndex = 1;
+            openFileDialog1.RestoreDirectory = true;
+
+            // Exibe o seletor de arquivos para o usuário selecionar um arquivo
+            if (openFileDialog1.ShowDialog() == DialogResult.OK)
+            {
+                // O usuário selecionou um arquivo
+                string nomeArquivo = openFileDialog1.FileName;
+
+                // Aqui você pode trabalhar com o nome do arquivo selecionado, por exemplo:
+                // exibir na interface gráfica, carregar o conteúdo do arquivo, etc.
+                MessageBox.Show($"Arquivo selecionado: {nomeArquivo}");
+
+                siticoneHtmlLabel1.Text = System.IO.Path.GetFileName(nomeArquivo);
+            }
+        }
     }
 }
